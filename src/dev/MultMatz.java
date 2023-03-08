@@ -86,7 +86,7 @@ Mat[i][j] = Leer.nextFloat();
 static void LlenMatzRan(float[][] Mat,int lenf,int lenc) {
 for(int i = 0; i < lenf; i ++) {
 for(int j = 0; j < lenc; j ++) {
-Mat[i][j] = rnd.nextFloat(100) + 1;
+Mat[i][j] = rnd.nextFloat(101);
 }
 }
 }
@@ -95,9 +95,9 @@ static void MultMatz(float[][] A,float[][] B) {
 	TamC_f = TamA_c;
 	TamC_c = TamB_f;
 	
-	for(int i = 0; i < A.length; i ++) {
-		for(int j = 0; j < B[0].length; j ++) {
-			for(int k = 0; k < A[0].length; k ++) {
+	for(int i = 0; i < B.length; i ++) {
+		for(int j = 0; j < A[0].length; j ++) {
+			for(int k = 0; k < B[0].length; k ++) {
 				MatrizC[i][j] += MatrizA[i][k] * MatrizB[k][j];
 			}
 			
